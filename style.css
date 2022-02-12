@@ -1,5 +1,5 @@
 /* Basic Configuration */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
 :root {
     --Background-color: hsl(216, 54%, 11%);
@@ -27,10 +27,10 @@ body {
 #card {
     background: var(--Background-Card-color);
     box-shadow: 0px 10px 8px 10px hsl(217, 55%, 10%);
-    border-radius: 10px;
+    border-radius: 15px;
 
-    width: 350px;
-    margin: 30px 0;
+    width: 355px;
+    margin: 143px 0;
 
     display: flex;
     flex-direction: column;
@@ -39,18 +39,27 @@ body {
 
 /* Image Section */
 #card_section-image {
-    width: 100%;
-    height: 30.5%;
+    width: 87%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+}
+
+#image_equilibrium-image {
+    border-radius: 10px;
+
+    width: 100%;
+    margin: 25px 0 0 0;
 }
 
 #card_section-image::before {
     content: "";
     width: 308px;
     height: 308px;
+    margin: 25px 0 0 0;
 
     position: absolute;
 }
@@ -59,6 +68,7 @@ body {
     content: "";
     width: 308px;
     height: 308px;
+    margin: 25px 0 0 0;
 
     position: absolute;
 }
@@ -73,16 +83,10 @@ body {
     cursor: pointer;
 }
 
-#image_equilibrium-image {
-    border-radius: 10px;
-
-    width: 88%;
-    margin: 20px 0;
-}
-
 /* Card Section */
 #card_section-info {
-    width: 90%;
+    width: 88%;
+    margin: 20px 0 0 0;
 }
 
 .titles {
@@ -96,7 +100,11 @@ body {
 
 #section-info_description {
     font-weight: 400;
-    margin: 22px 0;
+    margin: 18px 0 22px 0;
+}
+
+#section-info_description span {
+    font-weight: 300;
 }
 
 #section-info_more-info {
@@ -104,9 +112,26 @@ body {
     justify-content: space-between;
 }
 
+#more-info_value {
+    display: flex;
+    align-items: center;
+}
+
 #value_ethereum-value {
     color: var(--Selected-Color-text);
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 0 7px;
+}
+
+#more-info_publication-date {
+    display: flex;
+    align-items: center;
+}
+
+#publication-date_date {
+    font-size: 16px;
+    margin: 0 0 0 7px;
 }
 
 
@@ -116,7 +141,7 @@ body {
 
     width: 90%;
 
-    padding: 20px 0 25px 0;
+    padding: 10px 0 25px 0;
     margin: 20px 0 0 0;
 
     display: flex;
@@ -127,15 +152,15 @@ body {
     border: 1px solid var(--Color-Text-titles);
     border-radius: 50%;
 
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
 
     margin: 0 15px 0 0;
 }
 
 #credits_maker-credits {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 .selectionable-text:hover {
